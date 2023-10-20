@@ -1,0 +1,385 @@
+/*font-family: 'Roboto', sans-serif;
+font-family: 'Rubik Iso', cursive;
+font-family: 'Yellowtail', cursive;  */
+
+:root {
+    --rosa-oscuro: #8a5fbf;
+    --rosa-claro: #c994e5;
+    --rosa-blanco: #f2c7ff;
+    --gris-oscuro: #943ba8;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background: linear-gradient(90deg, #69158a, #6b3e83);
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #130211, #220731);
+    border-bottom: 2px solid var(--gris-oscuro);
+}
+
+.marca {
+    margin-top: 5px;
+    padding-left: 20px;
+    font-size: 1.8rem;
+    font-family: 'Yellowtail', cursive;
+}
+
+.marca p {
+    color: white;
+    text-shadow: 6px -3px 7px black;
+    box-shadow: 1px 1px 18px black;
+    border-radius: 20%;
+    border-bottom-style: ridge;
+    border-color: var(--rosa-claro);
+}
+
+.navbar-nav a {
+    color: white;
+    text-shadow: 1px 1px 10px rgb(30, 2, 31);
+    margin-right: 10px;
+
+}
+
+.navbar a:hover {
+    color: var(--rosa-blanco);
+}
+
+.navbar a:visited {
+    color: white;
+    text-shadow: 1px 1px 10px rgb(30, 2, 31);
+}
+
+.navbar-toggler-icon {
+    background-color: var(--rosa-claro);
+    border-radius: 20%;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+
+.collapse .navbar-nav .nav-item a {
+    color: white;
+    text-shadow: 1px 1px 10px rgb(30, 2, 31);
+}
+
+.collapse .navbar-nav .nav-item a:hover {
+    color: var(--rosa-blanco);
+}
+
+.presentacion-a {
+    color: var(--rosa-blanco);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.logo1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.collapse .dropdown-menu {
+    background-color: var(--gris-oscuro);
+    width: 10vw;
+}
+
+.collapse .dropdown-menu .dropdown-item:hover {
+    background-color: var(--rosa-oscuro);
+}
+
+.navbar-nav .dropdown .nav-link:visited {
+    color: white;
+    text-shadow: 1px 1px 10px rgb(30, 2, 31);
+}
+
+.dropdown .dropdown-item:hover {
+    color: var(--rosa-blanco);
+}
+
+section {
+    background: linear-gradient(90deg, #69158a, #6b3e83);
+}
+
+.seccion-principal {
+    height: 20%;
+    color: white;
+}
+
+.seccion-principal p {
+    font-size: 1.2rem;
+    color: white;
+    text-shadow: 1px 1px 10px rgb(30, 2, 31);
+    text-align: justify;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+.col img {
+    margin-bottom: 40px;
+    border-radius: 20%;
+    box-shadow: 1px 1px 25px black;
+    width: 400px;
+    max-width: 400px;
+    height: 300px;
+    min-height: 150px;
+    filter: brightness(0.8);
+}
+
+.container-video {
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    padding: 40px;
+}
+
+.video {
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    box-shadow: 1px 1px 18px black;
+    border-radius: 6%;
+}
+
+.titulo {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    color: #f2c7ff;
+    text-shadow: 1px 1px 4px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+}
+
+.subtitulo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: #f2c7ff;
+    text-shadow: 6px -3px 7px black;
+    text-decoration: underline;
+}
+
+.tarjetas {
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    padding-bottom: 50px;
+}
+
+.card-body {
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.card {
+    height: 30%;
+    align-items: center;
+    margin-right: 10px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 17px black;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.tarjetas i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--gris-oscuro);
+    font-size: 2.2rem;
+}
+
+.tarjetas a {
+    text-decoration: none;
+}
+
+.tarjetas span {
+    font-size: 1rem;
+    color: var(--gris-oscuro);
+}
+
+.fila {
+    width: 100%;
+    justify-content: center;
+}
+
+.canciones {
+    display: flex;
+    width: 98%;
+    margin: 15px 25px;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: wrap;
+    font-size: 1.1rem;
+    text-shadow: 1px 10px 10px black;
+}
+
+.canciones:hover {
+    color: var(--rosa-claro);
+}
+
+.canciones-a {
+    border: 3px groove rgb(217, 106, 231);
+    border-radius: 20px;
+    color: #943ba8;
+    max-width: 270px;
+    cursor: pointer;
+}
+
+.footer {
+    background: linear-gradient(90deg, #130211, #220731);
+    color: white;
+    padding: 10px;
+}
+
+.footer i {
+    margin: 5px;
+}
+
+.sigueme h1 {
+    font-size: 1.6rem;
+    display: flex;
+}
+
+.sigueme-a,
+.contrataciones-a {
+    text-decoration: none;
+    color: #e2c2f3;
+}
+
+.sigueme-a:hover,
+.contrataciones-a:hover {
+    color: white;
+}
+
+.contrataciones h1 {
+    font-size: 1.6rem;
+}
+
+.contrataciones-a {
+    margin: 2px;
+}
+
+@media (max-width:768px) {
+    .marca {
+        margin-top: 15px;
+        padding-left: 5px;
+        font-size: 1.3rem;
+    }
+
+    .navbar-collapse {
+        font-size: .9rem;
+    }
+
+    .collapse .dropdown-menu {
+        font-size: .9rem;
+        min-width: 20px;
+        width: 100px
+    }
+
+    .seccion-principal {
+        height: 20%;
+    }
+
+    .seccion-principal p {
+        font-size: 1.1rem;
+    }
+
+    .col img {
+        width: 80vw;
+        height: 120px;
+    }
+
+    .container-video {
+        max-height: 280px;
+        padding: 5px;
+    }
+
+    .titulo {
+        padding-top: 20px;
+    }
+
+    .tarjetas {
+        padding-bottom: 50px;
+    }
+
+    .tarjetas p,
+    .tarjetas span {
+        font-size: 1rem;
+    }
+
+    .tarjetas i {
+        font-size: .7rem;
+    }
+
+    .card-body {
+        display: flex;
+        align-items: center;
+        height: 7rem;
+    }
+
+    .card {
+        margin-right: 10px;
+        min-height: 200px;
+        max-height: 350px;
+    }
+
+    .canciones {
+        margin: 5px 10px;
+        padding: 0 10px;
+        font-size: .7rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer i {
+        font-size: 10px;
+    }
+
+    .sigueme h1,
+    .contrataciones h1 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .sigueme h1 {
+        font-size: 1rem;
+    }
+
+    .sigueme-a,
+    .contrataciones-a {
+        font-size: .7rem;
+    }
+
+    .contrataciones h1 {
+        margin-top: 20px;
+        font-size: .8rem;
+    }
+}
